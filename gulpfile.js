@@ -17,7 +17,7 @@ gulp.task('webserver', function() {
 });
  
 gulp.task('sass', function () {
-  return gulp.src('./app/src/css/main.scss')
+  return gulp.src('./app/src/scss/main.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(minifyCSS())
     .pipe(rename({
