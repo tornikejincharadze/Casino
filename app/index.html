@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="header__logo">
+            CASINO
+        </a>
+        <div class="header__right">
+            <form action="POST" class="header__form">
+                <label for="username" class="header__username">
+                    <input id="username" type="text" placeholder="User Name">
+                </label>
+                <label for="password" class="header_password">
+                    <input id="password" type="password" placeholder="******">
+                    <button class="header__sms">SMS</button>
+                    <a href="#" class="header__link-password">FORGET PASSWORD?</a>
+                </label>
+
+                <input type="submit" id="logIn"value="Log In" >
+            </form>
+            <a href="#" class="registration_button">Register</a>
+            <div class="lang-bar">
+                <button class="eng-lang">
+                    <img src="images/flag eng.png" alt="ENGLISH">
+                    ENG
+                </button>
+                <button class="geo-lang active">
+                    <img src="images/flag eng.png" alt="ქართული">
+                    ქართ
+                </button>
+            </div>
+        </div>
+        <nav class="header__nav">
+            <ul class="nav-ul">
+                <li class="ul-li active">
+                    <a href="sports.html" class="li-a">
+                        SPORTS
+                    </a>
+                </li>
+                <li class="ul-li">
+                    <a href="poker.html" class="li-a">
+                        POKER
+                    </a>
+                </li>
+                <li class="ul-li">
+                    <a href="live-casino.html" class="li-a">
+                        LIVE CASINO
+                    </a>
+                </li>
+                <li class="ul-li">
+                    <a href="slots.html" class="li-a">
+                        SLOTS
+                    </a>
+                </li>
+                <li class="ul-li">
+                    <a href="table-games.html" class="li-a">
+                        TABLE GAMES
+                    </a>
+                </li>
+                <li class="ul-li">
+                    <a href="skill-games.html" class="li-a">
+                        SKILL GAMES
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main_wrapper">
+            <nav class="sections_header">
+                <ul class="sections_header_ul">
+                    <li class="sections_header_li active">
+                        <button class="sections_header_button active">
+                            BALANCE MANAGEMENT
+                        </button>
+                    </li>
+                    <li class="sections_header_li">
+                        <button class="sections_header_button">
+                            TRANSACTION HISTORY
+                        </button>
+                    </li>
+                    <li class="sections_header_li">
+                        <button class="sections_header_button">
+                            ACCOUNT DETAILS
+                        </button>
+                    </li>
+                    <li class="sections_header_li">
+                        <button class="sections_header_button">
+                            ACCESS LOG
+                        </button>
+                    </li>
+                    <li class="sections_header_li">
+                        <button class="sections_header_button">
+                            PROMOTIONS
+                        </button>
+                    </li>
+                    <li class="sections_header_li">
+                        <button class="sections_header_button">
+                            MASSAGING
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="sub_menu">
+                <ul class="sub_menu_ul">
+                    <li class="sub_menu_li active">
+                        <button class="sub_menu_button">
+                            CASHIER
+                        </button>
+                    </li>
+                    <li class="sub_menu_li">
+                        <button class="sub_menu_button">
+                            DEPOSIT
+                        </button>
+                    </li>
+                    <li class="sub_menu_li">
+                        <button class="sub_menu_button">
+                            WITHDRAW
+                        </button>
+                    </li>
+                    <li class="sub_menu_li">
+                        <button class="sub_menu_button">
+                            CARD MANAGEMENT
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <section class="account_section">
+                    <h1>ACCOUNT INFO</h1>
+                    <ul class="account_info_table">
+                        <li class="account_info">
+                            <ul class="account_info_item">
+                                <li class="account_info_item_heading">
+                                    Username:
+                                </li>
+                                <li class="account_info_item_value">
+                                    USERNAME
+                                </li>
+                            </ul>
+                            <ul class="account_info_item">
+                                <li class="account_info_item_heading">
+                                    User ID:
+                                </li>
+                                <li class="account_info_item_value">
+                                    8500
+                                </li>
+                            </ul>
+                            <ul class="account_info_item">
+                                <li class="account_info_item_heading">
+                                    ID Verification:
+                                </li>
+                                <li class="account_info_item_value verified">
+                                    VERIFIED
+                                    <span class="verification_bullet"></span>
+                                </li>
+                            </ul>
+                            <ul class="account_info_item">
+                                <li class="account_info_item_heading">
+                                    Comomication Language:
+                                </li>
+                                <li class="account_info_item_value">
+                                    ENG
+                                    <button class="account_info_edit">
+                                        <img src="images/icon.png" alt="Edit">    
+                                        Edit
+                                    </button>
+                                </li>
+                            </ul>
+                            <ul class="account_info_item">
+                                <li class="account_info_item_heading">
+                                    Status:
+                                </li>
+                                <li class="account_info_item_value">
+                                    REGISTRATED
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+            </section>
+            <section class="document_section">
+                <div class="document_heading">
+                    <h1>ID DOCUMENT</h1>
+                    <div class="buttons_container">
+                        <button class="document_add">
+                            <img src="images/add.png" alt="Add">
+                            ADD NEW DOCUMENT
+                        </button>
+                        <button class="document_instru">
+                            <img src="images/question.png" alt="Instru">
+                            Instruction
+                        </button>
+                    </div>
+                </div>
+                <ul class="document_table">
+                    <li class="document_table_heading">
+                        <ul class="document_table_heading_ul">
+                            <li class="document_table_heading_li country">
+                                Country
+                            </li>
+                            <li class="document_table_heading_li date">
+                                DATE MODIFIED
+                            </li>
+                            <li class="document_table_heading_li type">
+                                DOCUMENT TYPE
+                            </li>
+                            <li class="document_table_heading_li docN">
+                                DOCUMENT #
+                            </li>
+                            <li class="document_table_heading_li pId">
+                                PERSONAL ID
+                            </li>
+                            <li class="document_table_heading_li status">
+                                STATUS  
+                            </li>
+                            <li class="document_table_heading_li update">
+                                DOCUMENT COPY
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="document_table_item">
+                        <ul class="document_table_ul">
+                            <li class="document_table_li country">
+                                Georgia
+                            </li>
+                            <li class="document_table_li date">
+                                31--1-2-15
+                            </li>
+                            <li class="document_table_li type">
+                                Personal ID
+                            </li>
+                            <li class="document_table_li docN">
+                                999988775555
+                            </li>
+                            <li class="document_table_li pId">
+                                09998877666
+                            </li>
+                            <li class="document_table_li status">
+                                VERIFIED
+                            </li>
+                            <li class="document_table_li update">
+                                <button class="document_table_button">
+                                    Update
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="document_table_item">
+                        <ul class="document_table_ul">
+                            <li class="document_table_li country">
+                                Georgia
+                            </li>
+                            <li class="document_table_li date">
+                                31--1-2-15
+                            </li>
+                            <li class="document_table_li type">
+                                Personal ID
+                            </li>
+                            <li class="document_table_li docN">
+                                999988775555
+                            </li>
+                            <li class="document_table_li pId">
+                                09998877666
+                            </li>
+                            <li class="document_table_li status">
+                                VERIFIED
+                            </li>
+                            <li class="document_table_li update">
+                                <button class="document_table_button">
+                                    Update
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="document_table_item">
+                        <ul class="document_table_ul">
+                            <li class="document_table_li country">
+                                Georgia
+                            </li>
+                            <li class="document_table_li date">
+                                31--1-2-15
+                            </li>
+                            <li class="document_table_li type">
+                                Personal ID
+                            </li>
+                            <li class="document_table_li docN">
+                                999988775555
+                            </li>
+                            <li class="document_table_li pId">
+                                09998877666
+                            </li>
+                            <li class="document_table_li status">
+                                VERIFIED
+                            </li>
+                            <li class="document_table_li update">
+                                <button class="document_table_button">
+                                    Update
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="contact_section">
+                <h1>CONTACT DETAILS</h1>
+                <ul class="contact_details">
+                    <li class="contact_details_item email">
+                        <ul class="contact_details_ul">
+                            <li class="contact_details_li_heading">E-mail:</li>
+                            <li class="contact_details_li">
+                                <span class="contact_details_value email"></span>
+                                <div class="edit_contact_info">
+                                    <div class="edit_form">
+                                        <input type="email" placeholder="New Email Address">
+                                        <button class="edit_confirm">
+                                            OK
+                                        </button>
+                                        <button class="edit_cancel">
+                                            Cancel
+                                        </button>
+                                    </div>
+                                    <button class="edit_button">
+                                        <img src="images/icon.png" alt="Edit">
+                                        Edit
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="contact_details_item userId">
+                        <ul class="contact_details_ul">
+                            <li class="contact_details_li_heading">User ID:</li>
+                            <li class="contact_details_li">
+                                <span class="contact_details_value uId">+995599538884</span>
+                                <div class="edit_contact_info">
+                                    <div class="edit_form">
+                                        <input type="number" placeholder="New User ID">
+                                        <button class="edit_confirm">
+                                            OK
+                                        </button>
+                                        <button class="edit_cancel">
+                                            Cancel
+                                        </button>
+                                    </div>
+                                    <button class="edit_button">
+                                        <img src="images/icon.png" alt="Edit">
+                                        Edit
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_top">
+            <nav class="footer_nav">
+                <ul class="footer_nav_ul">
+                    <li class="footer_nav_li">
+                        <a href="#">News</a>
+                    </li>
+                    <li class="footer_nav_li">
+                        <a href="#">About us</a>
+                    </li>
+                    <li class="footer_nav_li">
+                        <a href="#">Rules</a>
+                    </li>
+                    <li class="footer_nav_li">
+                        <a href="#">Terms & Conditions</a>
+                    </li>
+                    <li class="footer_nav_li">
+                        <a href="#">Security</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="age_control">
+                <span>+18</span>
+                <span>+21</span>
+                <span>RGP</span>
+            </div>
+        </div>
+        <div class="footer_second">
+            <ul class="social_ul">
+                <li class="social_li">
+                    <a href="#" class="social_link">
+                        <img src="images/facebook.png" class="social_img" alt="Fb">
+                    </a>
+                </li>
+                <li class="social_li">
+                    <a href="#" class="social_link">
+                        <img src="images/twitter.png" class="social_img" alt="twitter">
+                    </a>
+                </li>
+                <li class="social_li">
+                    <a href="#" class="social_link">
+                        <img src="images/G+.png" class="social_img" alt="G+">
+                    </a>
+                </li>
+                <li class="social_li">
+                    <a href="#" class="social_link">
+                        <img src="images/youtube.png" class="social_img" alt="Y2b">
+                    </a>
+                </li>
+                <li class="social_li">
+                    <a href="#" class="social_link">
+                        <img src="images/vk.png" class="social_img" alt="VK">
+                    </a>
+                </li>
+                <li class="social_li">
+                    <a href="#" class="social_link">
+                        <img src="images/ok.png" class="social_img" alt="Ok">
+                    </a>
+                </li>
+            </ul>
+            <address>
+                <ul class="address_ul">
+                    <li class="address_li">
+                        <span class="address_mob_index">+995 32</span>
+                        2711011
+                    </li>
+                    <li class="address_li">
+                        <span class="address_mob_index">+995 32</span>
+                        2711011
+                    </li>
+                </ul>
+            </address>
+        </div>
+
+        <ul class="partners_ul">
+            <li class="partners_li">
+                <a href="#" class="partners_item">
+                    <img src="images/pbox.png" alt="Pbox" class="partners_img">
+                </a>
+            </li>
+            <li class="partners_li">
+                <a href="#" class="partners_item">
+                    <img src="images/qwerty.png" alt="qwerty" class="partners_img">
+                </a>
+            </li>
+            <li class="partners_li">
+                <a href="#" class="partners_item">
+                    <img src="images/tbc.png" alt="TBC" class="partners_img">
+                </a>
+            </li>
+            <li class="partners_li">
+                <a href="#" class="partners_item">
+                    <img src="images/ge.png" alt="Ipay" class="partners_img">
+                </a>
+            </li>
+            <li class="partners_li">
+                <a href="#" class="partners_item">
+                    <img src="images/Layer76.png" alt="rame" class="partners_img">
+                </a>
+            </li>
+        </ul>
+
+        <p>
+            Electronic games (Internet) is operated by "Geobet" LTD (license #19-06/072, Permit term until 26.12.2017) 26 May Square #1, Tbilisi Internet Bookmaking is operated by Contrast+"LTD (license #19-05/009, Permit term until 01.02.2017) 26 May Square #1, Tbilisi Hitman and Lara Croft: Tomb Raider are trademarks of Square Enix Ltd. All rights reserved  SHOOT!:© 2012 Rodston Ltd 
+
+            THE DARK KNIGHT RISES and all related characters and elements are trademarks of and © DC Comics.(s13)
+        </p>
+
+        <div class="copyright">
+            <span class="all_rights">© Casino. All rights reserved.</span>
+            <div class="created_by">
+                Created By:
+                <a href="#">
+                    <img src="images/Singularlogo.png" alt="Singular">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>
