@@ -17,13 +17,13 @@ gulp.task('webserver', function() {
 });
  
 gulp.task('sass', function () {
-  return gulp.src('./app/css/main.scss')
+  return gulp.src('./app/src/css/main.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(minifyCSS())
     .pipe(rename({
         suffix: '.min'
     }))
-    .pipe(gulp.dest('./app/css'));
+    .pipe(gulp.dest('./app/dist/css'));
 });
 
 gulp.task("sass:watch", () => {
